@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Mathys</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-neutral-900 text-white font-sans pt-20">
+    
+    
+    <header class="fixed top-0 left-0 w-full bg-neutral-900 text-white font-sans z-50 flex justify-between items-center px-6 py-4 transition-colors duration-300">
+    <img id="nav-logo" src="img/Logo fond noir.png" class="w-[45px] md:w-[65px]" alt="Logo">
+    <nav class="space-x-6 flex items-center">
+        <a href="#about" class="hover:text-teal-400" data-i18n="navAbout">About</a>
+        <a href="#projects" class="hover:text-teal-400" data-i18n="navProjects">Projects</a>
+        <a href="#skills" class="hover:text-teal-400" data-i18n="navSkills">Skills</a>
+        <a href="#contact" class="hover:text-teal-400" data-i18n="navContact">Contact</a>
+        <button id="theme-toggle" class="ml-4 p-2 border border-neutral-700 rounded-lg hover:bg-neutral-800 transition">☀️</button>
+        <button id="lang-toggle" class="ml-4 p-2 border border-neutral-700 rounded-lg hover:bg-neutral-800 transition"><span id="lang-icon">🇫🇷</span></button>
+    </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 md:px-8 lg:px-16 pt-24">
+
+
+        <section id="hero" class="flex flex-col-reverse md:flex-row items-center justify-between gap-8">
+            <div class="text-center md:text-left">
+                <h1 class="text-5xl font-bold mb-4" data-i18n="hero-title">
+                Hi, I'm <span class="text-teal-400">Mathys,</span><br>
+                <span class="text-teal-400">Full-Stack </span>
+                <span class="text-white">&lt;/Developer&gt;</span></h1>
+                <p class="text-neutral-400 mb-8" data-i18n="hero-desc">
+                I'm an Epitech student, studying web development, object-oriented programming and network administration.</p>
+
+                <div class="space-x-4">
+                    <a href="#projects" class="bg-gray-700 hover:bg-teal-400 hover:text-stone-800 px-6 py-3 rounded-lg" data-i18n="button-project">My projects</a>
+                    <a href="/img/Développeur Web en alternance TOUX Mathys.pdf" download class="border border-neutral-500 px-6 py-3 rounded-lg hover:bg-neutral-800" data-i18n="button-cv">Download my resume</a>
+                </div>
+            </div>
+            <img src="img/CercleTeal.png" class="hidden md:block w-[250px] lg:w-[300px]">
+        </section>
+    
+        <section id="about" class="max-w-5xl mx-auto px-4 md:px-8 py-20 relative">
+            <h2 class="text-3xl font-semibold mb-12 text-center" data-i18n="journey">My Journey</h2>
+
+            <div class="relative">
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-teal-400 hidden md:block z-0"></div>
+
+                <div class="mb-12 flex flex-col md:flex-row items-center relative z-10">
+
+                <div class="w-full md:w-1/2 md:pr-8">
+                    <div class="bg-neutral-800 p-6 rounded-xl shadow-lg hover:-translate-y-1 transition-all duration-700 ease-out journey-card opacity-0 translate-y-10">
+                    <h3 class="text-teal-400 font-bold mb-2" data-i18n="gaco-title">GACO Arts option</h3>
+                    <p class="text-neutral-400 text-sm" data-i18n="gaco-card">
+                    Administrative and Commercial Management of Organisations, with an artistic twist. Discovered design and marketing.</p>
+                </div>
+            </div>
+
+        <div class="hidden md:block relative w-6 h-6 bg-teal-400 rounded-full border-4 border-neutral-900 z-10"></div>
+        <div class="hidden md:block w-1/2"></div>
+        </div>
+
+        <div class="mb-12 flex flex-col md:flex-row items-center relative z-10">
+
+            <div class="hidden md:block w-1/2"></div>
+            <div class="hidden md:block relative w-6 h-6 bg-teal-400 rounded-full border-4 border-neutral-900 z-10"></div>
+
+            <div class="w-full md:w-1/2 md:pl-8 md:text-left">
+                <div class="bg-neutral-800 p-6 rounded-xl shadow-lg hover:-translate-y-1 transition-all duration-700 ease-out journey-card opacity-0 translate-y-10">
+                <h3 class="text-teal-400 font-bold mb-2">MyDigitalSchool</h3>
+                <p class="text-neutral-400 text-sm" data-i18n="MDS-card">
+                    Studied design, and made my first sites using html, CSS, Javascript and Figma. </p>
+                </div>
+            </div>
+    </div>
+        <div class="mb-12 flex flex-col md:flex-row items-center relative z-10">
+        <div class="w-full md:w-1/2 md:pr-8">
+            <div class="bg-neutral-800 p-6 rounded-xl shadow-lg hover:-translate-y-1 transition-all duration-700 ease-out journey-card opacity-0 translate-y-10">
+            <h3 class="text-teal-400 font-bold mb-2" data-i18n="internship-title">Intership</h3>
+            <p class="text-neutral-400 text-sm" data-i18n="feelloo">
+                Gained experience in sales, Google Ads as well as site maintenance using html and CSS, and answering client demands.
+            </p>
+            </div>
+        </div>
+
+        <div class="hidden md:block relative w-6 h-6 bg-teal-400 rounded-full border-4 border-neutral-900 z-10"></div>
+
+        <div class="hidden md:block w-1/2"></div>
+        </div>
+
+        <div class="mb-12 flex flex-col md:flex-row items-center relative z-10">
+        <div class="hidden md:block w-1/2"></div>
+
+        <div class="hidden md:block relative w-6 h-6 bg-teal-400 rounded-full border-4 border-neutral-900 z-10"></div>
+        <div class="w-full md:w-1/2 md:pl-8 md:text-left">
+            <div class="bg-neutral-800 p-6 rounded-xl shadow-lg hover:-translate-y-1 transition-all duration-700 ease-out journey-card opacity-0 translate-y-10">
+            <h3 class="text-teal-400 font-bold mb-2">Epitech <span class="text-gray-400" data-i18n="epitech-going">(still going!)</span></h3>
+            <p class="text-neutral-400 text-sm" data-i18n="epitech">
+                Intensive coding, web development, object-oriented programming and
+                network administration. Learned PHP, SQL, Javascript, Git, Linux and Java.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <section data-i18n="hobbies">
+        <h2 class="text-3xl font-semibold mb-8 text-center">I don't just code all day...</h2>
+        <p class="text-neutral-400 text-sm"><span class="text-3xl">♟️</span> As I enjoy <b class="text-white">challenges and puzzles</b> and keeping my brain reasonably healthy, I play chess on my free time, am an <b class="text-white">active member</b> of my club and play in the national division, if that's something you are interested in, you can always challenge me on my <a href="https://www.chess.com/member/oktogaunt" class="text-teal-400">Chesscom.</a></p>
+        <p class="text-neutral-400 text-sm"><span class="text-3xl">🎸</span> I can't live without music, it's always playing in my home, wether it's a vinyl, a YouTube playlist or me playing the guitar. I also <b class="text-white">teach music</b>, and have had around 30 students over the years.
+        <p class="text-neutral-400 text-sm"><span class="text-3xl">🎬</span> Also I make <a href="https://www.youtube.com/@shinopolo" class="text-teal-400"> videos about it.</a></p>
+        <p class="text-neutral-400 text-sm">Playing in a band taught me <b class="text-white">working with people</b>, stress management and <b class="text-white">adapting fast</b> (like how I needed to learn 5 songs in less than 3 days)</p>
+        <p class="text-neutral-400 text-sm"><span class="text-3xl">🚴‍♂️</span> If I can cycle somewhere, then I do, sport is an essential part of my life and allows me to stay sharp.</p>
+    </section>
+
+
+
+
+
+
+    <section id="projects" class="max-w-5xl mx-auto px-4 md:px-8 py-20">
+        <h2 class="text-3xl font-semibold mb-8 text-center" data-i18n="jobboard-title">My JobBoard Project</h2>
+        <p class="mb-4 text-neutral-400 text-center md:text-left" data-i18n="job-desc">
+        How in two weeks, I and two of my colleagues made a functional clone of HelloWork, Indeed or Glassdoor.</p>
+        <p class="mb-4 text-neutral-400 text-center md:text-left" data-i18n="techstack">
+        Tech stack : Javascript, SQL, sqlite3, Bootstrap, html and CSS</p>
+        <p class="mb-8 text-neutral-400 text-center md:text-left" data-i18n="bac">
+        Meet <span class="text-teal-400">BAC</span>, la Brigade Anti-Chômage:</p>
+
+
+    <div class="flex flex-col md:flex-row items-center bg-neutral-800 rounded-xl shadow-lg overflow-hidden transition-all hover:-translate-y-1 spaceLine">
+        <div class="w-full md:w-1/2">
+            <img src="img/Front page.png" alt="Front Page" class="w-full h-full object-cover">
+        </div>
+
+        <div class="w-full md:w-1/2 p-6 flex flex-col justify-center" data-i18n="frontpage">
+            <h4 class="text-teal-400 text-2xl font-bold mb-4">Front Page</h4>
+            <p class="text-neutral-400 mb-2 font-semibold">Functionalities:</p>
+            <ul class="text-neutral-400 list-disc list-inside space-y-1 text-sm">
+                <li>Dynamic display of job ads</li>
+                <li>A Learn more button fetches info from database</li>
+                <li>Apply button sends application to the company</li>
+                <li>Auto fill form if logged in</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center bg-neutral-800 rounded-xl shadow-lg overflow-hidden transition-all hover:-translate-y-1 spaceLine">
+
+        <div class="w-full md:w-1/2 p-6 flex flex-col justify-center" data-i18n="login">
+            <h4 class="text-teal-400 text-2xl font-bold mb-4">LogIn Page</h4>
+            <p class="text-neutral-400 mb-2 font-semibold">Functionalities:</p>
+            <ul class="text-neutral-400 list-disc list-inside space-y-1 text-sm">
+                <li>Store your session info</li>
+                <li>Verify if user is valid</li>
+                <li>Account creation</li>
+                <li>Allows display of account info on main page</li>
+            </ul>
+        </div>
+
+        <div class="w-full md:w-1/2">
+            <img src="img/Login.png" alt="Front Page" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center bg-neutral-800 rounded-xl shadow-lg overflow-hidden transition-all hover:-translate-y-1">
+
+        <div class="w-full md:w-1/2">
+            <img src="img/Admin.png" alt="Front Page" class="w-full h-full object-cover">
+        </div>
+
+        <div class="w-full md:w-1/2 p-6 flex flex-col justify-center" data-i18n="admin">
+            <h4 class="text-teal-400 text-2xl font-bold mb-4">Admin Page</h4>
+            <p class="text-neutral-400 mb-2 font-semibold">Functionalities:</p>
+            <ul class="text-neutral-400 list-disc list-inside space-y-1 text-sm">
+                <li>CyberSecurity, checks if user is allowed on</li>
+                <li>Create, Read, Modify and Delete info in database</li>
+                <li>Front view of Back-End operations</li>
+                <li>Changes in real time the display on main page</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="text-3xl font-semibold mb-8 text-center mt-20" data-i18n="triangle-title">Fun Sierpinski triangle algorithm</h2>
+        <p class="mb-4 text-neutral-400 text-center md:text-left" data-i18n="triangle-desc">
+        Using python and turtle graphics library, this program builds a Sierpinski triangle to the chosen depth.
+        </p>
+        <p class="mb-4 text-neutral-400 text-center md:text-left" data-i18n="tech-triangle">
+        Tech stack : Python, Turtle
+        </p>
+
+        <div class="flex flex-col md:flex-row items-center bg-neutral-800 rounded-xl shadow-lg overflow-hidden transition-all hover:-translate-y-1">
+
+        <div class="w-full md:w-1/2">
+            <img src="img/Triangle.png" alt="Front Page" class="w-full h-full object-cover">
+        </div>
+
+        <div class="w-full md:w-1/2 p-6 flex flex-col justify-center" data-i18n="sierpinski">
+            <h4 class="text-teal-400 text-2xl font-bold mb-4">Sierpinski Triangle</h4>
+            <p class="text-neutral-400 mb-2 font-semibold">Core concepts:</p>
+            <ul class="text-neutral-400 list-disc list-inside space-y-1 text-sm">
+                <li>Trigonometry for rainbow colors</li>
+                <li>Recursion to achieve fractal display</li>
+            </ul>
+        </div>
+    </div>
+        
+</section>
+        
+
+
+        <section id="skills" class="max-w-5xl mx-auto px-4 md:px-8 py-20">
+    <h2 class="text-3xl font-semibold mb-12 text-center" data-i18n="skillz">My Skills</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-neutral-800 p-6 rounded-xl shadow-lg">
+            <h3 class="text-teal-400 text-xl font-bold mb-6 flex items-center">
+                Front-End</h3>
+
+            <div class="mb-4">
+                <div class="flex justify-between mb-1">
+                    <span class="text-neutral-400 text-sm">HTML / CSS / Tailwind</span>
+                    <span class="text-neutral-400 text-sm">90%</span>
+                </div>
+                <div class="w-full bg-neutral-700 h-2 rounded-full">
+                    <div class="bg-teal-400 h-2 rounded-full" style="width: 90%"></div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="flex justify-between mb-1">
+                    <span class="text-neutral-400 text-sm">Figma / Adobe Suite</span>
+                    <span class="text-neutral-400 text-sm">85%</span>
+                </div>
+                <div class="w-full bg-neutral-700 h-2 rounded-full">
+                    <div class="bg-teal-400 h-2 rounded-full" style="width: 85%"></div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="flex justify-between mb-1">
+                    <span class="text-neutral-400 text-sm">JavaScript</span>
+                    <span class="text-neutral-400 text-sm">80%</span>
+                </div>
+                <div class="w-full bg-neutral-700 h-2 rounded-full">
+                    <div class="bg-teal-400 h-2 rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-neutral-800 p-6 rounded-xl shadow-lg">
+            <h3 class="text-teal-400 text-xl font-bold mb-6 flex items-center">
+                Server</h3>
+
+            <div class="mb-4">
+                <div class="flex justify-between mb-1">
+                    <span class="text-neutral-400 text-sm">Node.js</span>
+                    <span class="text-neutral-400 text-sm">80%</span>
+                </div>
+                <div class="w-full bg-neutral-700 h-2 rounded-full">
+                    <div class="bg-teal-400 h-2 rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="flex justify-between mb-1">
+                    <span class="text-neutral-400 text-sm">Express</span>
+                    <span class="text-neutral-400 text-sm">75%</span>
+                </div>
+                <div class="w-full bg-neutral-700 h-2 rounded-full">
+                    <div class="bg-teal-400 h-2 rounded-full" style="width: 75%"></div>
+                </div>
+            </div>
+
+        
+        </div>
+
+
+        <div class="bg-neutral-800 p-6 rounded-xl shadow-lg">
+            <h3 class="text-teal-400 text-xl font-bold mb-6 flex items-center">
+                Back-End</h3>
+
+            <div class="mb-4">
+                <div class="flex justify-between mb-1">
+                    <span class="text-neutral-400 text-sm">SQL / Sqlite3</span>
+                    <span class="text-neutral-400 text-sm">80%</span>
+                </div>
+                <div class="w-full bg-neutral-700 h-2 rounded-full">
+                    <div class="bg-teal-400 h-2 rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="flex justify-between mb-1">
+                    <span class="text-neutral-400 text-sm">PHP</span>
+                    <span class="text-neutral-400 text-sm">65%</span>
+                </div>
+                <div class="w-full bg-neutral-700 h-2 rounded-full">
+                    <div class="bg-teal-400 h-2 rounded-full" style="width: 65%"></div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="flex justify-between mb-1">
+                    <span class="text-neutral-400 text-sm">Java / Python</span>
+                    <span class="text-neutral-400 text-sm">75%</span>
+                </div>
+                <div class="w-full bg-neutral-700 h-2 rounded-full">
+                    <div class="bg-teal-400 h-2 rounded-full" style="width: 75%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="contact" class="py-20 px-6 max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8" data-i18n="contact-me" >Contact Me</h2>
+
+            <form action="https://formspree.io/f/xzzkzzkw" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-left mb-2" data-i18n="name-form">Name</label>
+                    <input type="text" id="name" name="name" required
+                            class="w-full p-3 bg-neutral-800 border border-neutral-700 rounded-lg focus:outline-none focus:border-teal-400">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-left mb-2">Email</label>
+                    <input type="email" id="email" name="email" required
+                            class="w-full p-3 bg-neutral-800 border border-neutral-700 rounded-lg focus:outline-none focus:border-teal-400">
+                </div>
+
+                <div>
+                    <label for="message" class="block text-left mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5" required
+                                class="w-full p-3 bg-neutral-800 border border-neutral-700 rounded-lg focus:outline-none focus:border-teal-400"></textarea>
+                </div>
+
+                <button type="submit" class="bg-teal-500 text-black font-semibold px-6 py-3 rounded-lg hover:bg-teal-400 transition" data-i18n="message">
+                Send Message</button>
+            </form>
+    </section>
+    </main>
+
+
+  <footer class="py-10 text-center text-sm text-neutral-500">
+    © 2025 TOUX Mathys
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+.spaceLine{
+    margin-bottom: 10px;
+}
+
+body {
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.light body {
+  background-color: #f5f5f5;
+  color: #000; 
+}
+
+.light header {
+  background-color: #ffffff;
+  color: #000;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.light a {
+  color: #000;
+}
+
+.light a:hover {
+  color: #0d9488; 
+}
+
+.light a[href="#projects"].bg-gray-700 {
+  background-color: #14b8a6 !important; 
+  color: #fff !important;
+}
+
+.light a[href="#projects"].bg-gray-700:hover {
+  background-color: #0d9488 !important;
+}
+
+.light h1,
+.light h2,
+.light h3,
+.light h4,
+.light h5,
+.light h6,
+.light strong,
+.light p,
+.light span,
+.light li,
+.light b {
+  color: #000 !important;
+}
+
+.light .bg-neutral-800 {
+  background-color: #e5e7eb !important; 
+  color: #000 !important;
+}
+
+.light .text-teal-400 {
+  color: #0d9488 !important;
+}
